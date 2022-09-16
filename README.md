@@ -22,3 +22,5 @@ For A good ML model should have low bias and low variance.
 Main goal of regularization is avoiding overfitting. Overfitting means the model is trying too hard to capture the data points that don’t really represent the true properties of your data. End result of over fitting is low accuracy. One of the ways of avoiding overfitting is using cross validation that helps in estimating the error over test set, and in deciding what parameters work best for your model.  
 See the data below which shows the relationship between number of rooms and the cost of the house. Since the data look liner, we can use linear regression (least square) by minimizing the sum of mean square error (MSE):
 
+![Fig1](https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Overfit.jpg?raw=true)
+*Fig 1*
