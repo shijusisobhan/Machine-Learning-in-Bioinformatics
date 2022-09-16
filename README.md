@@ -63,6 +63,6 @@ y1 = m11 * x1 + m12 * x2 + c1
 
 y2= m21 * x1 + m22 * x2 + c2
 
-■(y1@y2)=[■(m11&m12@m21&m22)]       ■(x1@x2)+■(c1@c2) 
 
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/matrix.jpg?raw=true" width="800">
 
