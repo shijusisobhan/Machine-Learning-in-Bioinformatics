@@ -2,8 +2,8 @@
 Technological advances in next-generation sequencing (NGS) generate massive amounts of data that allowed researchers to study wide genetic variation and gene expressions. The explosion of these omics data challenges the existing methodologies for data analysis. With the increasing availability of different types of omics data, the application of machine learning (ML) methods has become more persistent. The machine-learning method provides a powerful tool for classifying and observing biological data. The aim of this field of bioinformatics is to develop computer algorithms capable of identifying predictable patterns in biological data samples. In this tutorial, I am introducing the applications of regularization techniques in ML to solve biological problems. Here I am presenting a test example and a real-world example with R code. Data and codes are upload in the github page. 
 
 ## Prerequisites
--You are familiar with basic machine learning techniques (eg: Linear Regression)
--You have basic knowledge in R programming 
+1. You are familiar with basic machine learning techniques (eg: Linear Regression)
+2. You have basic knowledge in R programming 
 
 ## Work flow
 1. Introduction to basic terminologies in ML and Regularization
