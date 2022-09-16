@@ -24,3 +24,5 @@ See the data below which shows the relationship between number of rooms and the 
 
 ![Fig1](https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Overfit.jpg?raw=true = 25x25)
 *Fig 1*
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Overfit.jpg?raw=true" width="48">
