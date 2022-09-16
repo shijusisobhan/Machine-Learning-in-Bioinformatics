@@ -25,3 +25,10 @@ See the data below which shows the relationship between number of rooms and the 
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Overfit.jpg?raw=true" width="400">
 
 $cost= m * (# Rooms) + c, given   MSE = ∑(actual cost-predicted cost)^2 is minimum ----(1)
+
+If we have many measurements, least square accurately predict the relationship between cost and number of rooms (Green line). On the other hand, if we have only fewer measurements (only two red dots), we fit a new line with least squares (Black thick line). We can call red dots are training data and remaining blue dots are test data. Since newline overlap the two red data points, MSE for training data is zero, however MSE for testing data is large (High variance). That means the new line is overfit to the training data. So, the main idea behind the regularization is to find a new line that doesn’t fit the training data as well. It reduces the variance by introducing small amount of bias (Black dashed line).  Different regularization techniques are
+
+1. Ridge regression - It minimizes ∑(actual cost-predicted cost)^2 + λ (m^2) to fit the line
+2. Lasso regression - It minimizes ∑(actual cost-predicted cost)^2 + λ |m| to fit the line
+3. Elastic net regression – It is a combination of ridge regression and lasso regression. It minimizes ∑(actual cost-predicted cost)^2 + λ (m^2) + λ |m| to fit the line
+
