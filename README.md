@@ -22,3 +22,20 @@ For A good ML model should have low bias and low variance.
 Main goal of regularization is avoiding overfitting. Overfitting means the model is trying too hard to capture the data points that don’t really represent the true properties of your data. End result of over fitting is low accuracy. One of the ways of avoiding overfitting is using cross validation that helps in estimating the error over test set, and in deciding what parameters work best for your model.  
 See the data below which shows the relationship between number of rooms and the cost of the house. Since the data look liner, we can use linear regression (least square) by minimizing the sum of mean square error (MSE):
 
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Overfit.jpg?raw=true" width="400"> 
+*Fig 1*
+
+$cost= m * (# Rooms) + c, given   MSE = ∑(actual cost-predicted cost)^2 is minimum ----(1)
+
+If we have many measurements, least square accurately predict the relationship between cost and number of rooms (Green line). On the other hand, if we have only fewer measurements (only two red dots), we fit a new line with least squares (Black thick line). We can call red dots are training data and remaining blue dots are test data. Since newline overlap the two red data points, MSE for training data is zero, however MSE for testing data is large (High variance). That means the new line is overfit to the training data. So, the main idea behind the regularization is to find a new line that doesn’t fit the training data as well. It reduces the variance by introducing small amount of bias (Black dashed line).  Different regularization techniques are
+
+1. Ridge regression - It minimizes ∑(actual cost-predicted cost)^2 + λ (m^2) to fit the line
+2. Lasso regression - It minimizes ∑(actual cost-predicted cost)^2 + λ |m| to fit the line
+3. Elastic net regression – It is a combination of ridge regression and lasso regression. It minimizes ∑(actual cost-predicted cost)^2 + λ (m^2) + λ |m| to fit the line
+
+Where λ is the ridge/lasso/elastic net regression penalty
+
+Now again go back to the equation-1, ie, $cost= m * (# Rooms) + c, where we need to estimate two parameters m and c. In this case, we need at least two data point to estimate those parameters. If we have only one data points, then we wouldn’t be able to estimate those parameters. Look at the Fig-2A, If there is only single point, you can fit any line passing through it, however, there is no way to tell if the red line is better than green line or black line or any other line goes through this data point. If we have two data points then it is clear that which the least square solution (Fig 2B).
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Singlepoint.jpg?raw=true" width="400"> 
+*Fig 2*
