@@ -22,8 +22,9 @@ For A good ML model should have low bias and low variance.
 Main goal of regularization is avoiding overfitting. Overfitting means the model is trying too hard to capture the data points that don’t really represent the true properties of your data. End result of over fitting is low accuracy. One of the ways of avoiding overfitting is using cross validation that helps in estimating the error over test set, and in deciding what parameters work best for your model.  
 See the data below which shows the relationship between number of rooms and the cost of the house. Since the data look liner, we can use linear regression (least square) by minimizing the sum of mean square error (MSE):
 
-<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Overfit.jpg?raw=true" width="400"> 
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Overfit.jpg?raw=true" width="500"> 
 *Fig 1*
+
 
 $cost= m * (# Rooms) + c, given   MSE = ∑(actual cost-predicted cost)^2 is minimum ----(1)
 
@@ -37,5 +38,31 @@ Where λ is the ridge/lasso/elastic net regression penalty
 
 Now again go back to the equation-1, ie, $cost= m * (# Rooms) + c, where we need to estimate two parameters m and c. In this case, we need at least two data point to estimate those parameters. If we have only one data points, then we wouldn’t be able to estimate those parameters. Look at the Fig-2A, If there is only single point, you can fit any line passing through it, however, there is no way to tell if the red line is better than green line or black line or any other line goes through this data point. If we have two data points then it is clear that which the least square solution (Fig 2B).
 
-<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Singlepoint.jpg?raw=true" width="400"> 
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Singlepoint.jpg?raw=true" width="800"> 
 *Fig 2*
+
+Now let’s look at the case where we have two variables (#Rooms, #Bathrooms) and need to estimate 3 parameters. The model equation is as follows:
+
+
+$cost= m1 * (# Rooms) +m2* (#Bathrooms)+ c
+
+
+In this case, 2 data points is not sufficient to estimates the 3 parameters (m1,m2,c), instead, we required at least 3 data points. Likewise, if have n variable, then we have to estimate n+1 parameters and minimum n+1 data point is required to estimates those parameters. If we have an equation with 5000 variables, then we need at least 5001 data points to estimate those parameters. An equation with 5000 variables might sound crazy, but it is more common in real life. For example, we may use 5000 gene expression to predict some disease (eg. Cancer) and that means we have to collect gene expression data from 5001 human. However, collecting gene expression from 5001 person is time consuming and very expensive. Practically we can collect data from 500 or 1000 humans. What we do if we have a ML model with 5001 variables and only 1000 or less than 1000 data points. We use regularization techniques in ML!!!. It can find a solution with cross validation and λ that favors smaller parameter value. 
+
+
+Another problem in ML is to identify the correct variables in data, which has true correlation with output. For example, table-1 shows the prices of the house. It has 4 variables, among them house number doesn’t have any relation with house price.  It is obvious, and by looking the data we can identify it. But what will happens if we don’t know about it? This problem also can be solved by using regularization method, which will identify the exact variables, which has true relationship with output.
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Data.jpg?raw=true" width="800"> 
+
+### Multi response models
+ML model to learn predictive relationships between multiple input and multiple output variables. For example, assume the table-1 have one more column, house insurance premium/year, which is also a function of the same input variables. Simply we can say that multiple output can be predicted from the same set of input as follows.
+
+
+y1 = m11 * x1 + m12 * x2 + c1
+
+
+y2= m21 * x1 + m22 * x2 + c2
+
+■(y1@y2)=[■(m11&m12@m21&m22)]       ■(x1@x2)+■(c1@c2) 
+
+
