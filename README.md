@@ -11,7 +11,7 @@ Technological advances in next-generation sequencing (NGS) generate massive amou
 3. Introduction to biological background of the real-world problem
 4. Application of regularization to solve the real-world problem (with R code)
 
-##Introduction to basic terminologies in ML and Regularization
+## Introduction to basic terminologies in ML and Regularization
 ### Bias and variance
 Bias- The inability of a ML technique to capture the true relation is called bias
 Eg: We are trying to fit a curve data with linear regression model. It never captures the curve relationship. Straight line has very little flexibility. So, it has high bias. In contrast squiggly line have lower bias and it capture it easily.
