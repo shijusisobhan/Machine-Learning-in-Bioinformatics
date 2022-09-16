@@ -61,6 +61,8 @@ ML model to learn predictive relationships between multiple input and multiple o
 y1 = m11 * x1 + m12 * x2 + c1
 
 
-y2=m21 * x1 + m22 * x2 + c2
+y2= m21 * x1 + m22 * x2 + c2
+
+■(y1@y2)=[■(m11&m12@m21&m22)]       ■(x1@x2)+■(c1@c2) 
 
 
