@@ -50,7 +50,7 @@ $cost= m1 * (# Rooms) +m2* (#Bathrooms)+ c
 In this case, 2 data points is not sufficient to estimates the 3 parameters (m1,m2,c), instead, we required at least 3 data points. Likewise, if have n variable, then we have to estimate n+1 parameters and minimum n+1 data point is required to estimates those parameters. If we have an equation with 5000 variables, then we need at least 5001 data points to estimate those parameters. An equation with 5000 variables might sound crazy, but it is more common in real life. For example, we may use 5000 gene expression to predict some disease (eg. Cancer) and that means we have to collect gene expression data from 5001 human. However, collecting gene expression from 5001 person is time consuming and very expensive. Practically we can collect data from 500 or 1000 humans. What we do if we have a ML model with 5001 variables and only 1000 or less than 1000 data points. We use regularization techniques in ML!!!. It can find a solution with cross validation and λ that favors smaller parameter value. 
 
 
-Another problem in ML is to identify the correct variables in data, which has true correlation with output. For example, table-1 shows the prices of the house. It has 4 variables, among them house number doesn’t have any relation with house price.  It is obvious, and by looking the data we can identify it. But what will happens if we don’t know about it. ????. This problem also can be solved by using regularization method, which will identify the exact variables, which has true relationship with output.
+Another problem in ML is to identify the correct variables in data, which has true correlation with output. For example, table-1 shows the prices of the house. It has 4 variables, among them house number doesn’t have any relation with house price.  It is obvious, and by looking the data we can identify it. But what will happens if we don’t know about it? This problem also can be solved by using regularization method, which will identify the exact variables, which has true relationship with output.
 
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Data.jpg?raw=true" width="800"> 
 
@@ -58,9 +58,9 @@ Another problem in ML is to identify the correct variables in data, which has tr
 ML model to learn predictive relationships between multiple input and multiple output variables. For example, assume the table-1 have one more column, house insurance premium/year, which is also a function of the same input variables. Simply we can say that multiple output can be predicted from the same set of input as follows.
 
 
-y1 = m11*x1 +m12*x2+c1
+y1 = m11 * x1 + m12 * x2 + c1
 
 
-y2=m21*x1+m22*x2+c2
+y2=m21 * x1 + m22 * x2 + c2
 
 
