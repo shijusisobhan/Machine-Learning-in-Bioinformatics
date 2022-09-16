@@ -66,3 +66,12 @@ y2= m21 * x1 + m22 * x2 + c2
 
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/matrix.jpg?raw=true" width="200">
 
+## Multi response elastic net regression Example-1 (synthetic data)
+
+Problem overview 
+
+
+1. We are generating a 5000 gene expression for 1000 data sample
+2. Define two output variables, which are depending on input gene expressions, but only to a selected number of genes.
+3. Apply elastic net regression to predict those output from the gene expression data and predict the exact genes which are really correlate with the output. 
+
