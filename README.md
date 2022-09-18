@@ -182,3 +182,31 @@ P_y2_sort<-P_y2[order(-P_y2$coefficients),]
 sig_genes_y2<- P_y2_sort[which(P_y2_sort$coefficients > 1e-1),]
 sig_genes_y2
 ```
+
+
+
+## Real-world example- Predict physiological time based on gene expression in human blood
+
+### A brief introduction to the biological background and relevance of the problem
+
+Circadian rhythm (Body clock) – Circadian rhythms are internally driven cycles of hormone\gene\ protein that rise and fall during the 24-hour day. It helps you fall asleep at night and wake you up in the morning. It simply maintains the timing of the internal body, so it is known as the body clock. Circadian clocks play a key role in regulating a vast array of biological processes, with significant implications for human health. Humans are heterogenous in internal body time. Accurate assessment of physiological time can significantly improve the diagnosis of circadian disorders and optimize the delivery time of therapeutic treatments.
+The current method to assess internal time is dim-light melatonin onset (DLMO): Determine the time point when endogenous melatonin reaches a predefined threshold concentration in blood plasma. The major limitation of this technique is the need for serial sampling over extended periods of several hours, which is both costly and burdensome to the patient. So main aim of this problem is to predict physiological time based on gene expression in human blood. Braun et al. (2018) Introduce machine learning techniques to predict the internal timing from human gene expression data. The basic ideas behind the algorithms are subject-wise normalization of the gene expression data and elastic net regression. Those who have interested in this research work please see the link. Here I provide the different steps involved in the technique.
+
+1. log2 normalization of gene expression data
+2. normalization of data within the subject
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Normalization.jpg?raw=true" width="300">
+
+3. Collect the time after melatonin reaches 25% (DLMO25). Convert the time into angle of the hour
+hand on a 24-h clock. θi =2*pi*ti/24, where ti is the time point when endogenous melatonin reaches 25% concentration in blood plasma.
+4. Perform a bivariate regression of the cartesian coordinates (The melatonin level with respect to the time roughly follows a cosine wave with a period of 24hr)
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Regression.jpg?raw=true" width="300">
+
+5. In this problem the number of predictor variables, ie genes (7616) are larger than number of observations (355). Also, the majority of the genes will not have strong relationship with internal time. So, to reduce the overfitting and obtain a simple model, elastic net regularization for feature selection. It solves following equation to get the best fit.
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/elastic.jpg?raw=true" width="300">
+
+
+Here we demonstrate the Implementation of the Machine learning algorithm on R. The data used here is originally presented by Moller et. al (2013). We have downloaded the data and normalized it based on the techniques described in Braun et.al. We already upload the normalized gene expression data on the GitHub page.
+
