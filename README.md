@@ -185,7 +185,7 @@ sig_genes_y2
 
 
 
-## Real-world example- Predict physiological time based on gene expression in human blood
+## Real-world example: Predict physiological time based on gene expression in human blood
 
 ### A brief introduction to the biological background and relevance of the problem
 
