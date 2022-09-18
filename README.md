@@ -96,7 +96,9 @@ p=5000 # Number of genes
 x=matrix(rnorm(n*p), nrow = n, ncol = p)
 nn<-1:5000
 colnames(x)<-paste('gene', nn, sep = '.')
+```
 
+```markdown
 ## Define the output y1 and y2 (multi response)
 
 # Index of the Genes that actually correlate with y1
@@ -106,6 +108,9 @@ real_p2=c(21,24,25,29,30,35,40,45,60,61,68,90,99)
 y1=apply(x[,real_p1], 1, sum)+rnorm(n)
 y2=apply(x[,real_p2], 1, sum)+rnorm(n)
 y=data.frame(y1,y2)
+```
+
+```markdown
 
 ### ******split data into train and test *************************************
 train_rows<-sample(1:n, 0.66*n)
@@ -136,6 +141,9 @@ mse_Net
 ## ****plot test output vs predicted output ************
 
 plot(y_test_1, Pred_net)
+```
+
+```markdown
 
 ## ******Extract the real genes that correlate with output **********************
 
