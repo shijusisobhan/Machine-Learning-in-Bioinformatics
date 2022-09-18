@@ -278,7 +278,7 @@ plot(y_test_Time, Pred_Time)
 ```
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/pred_vs_test_reala_data.jpg?raw=true" width="400">
 
-Elastic nete regression accurately prdict the internal body time from gene expression data. Note that the data points on the two corners are not an outlier or bad results, instead, they are also show high accuracy, because the true time is modulo 24.
+Elastic nete regression accurately prdicts the internal body time from gene expression data. Note that the data points on the two corners are not an outlier or bad results, instead, they are also show high accuracy, because the true time is modulo 24.
 ```markdown
 
 ## ******Extract the real genes that correlate with DLMO25 time **********************
