@@ -3,7 +3,9 @@
 rm(list=ls())
 set.seed(200) 
 
-setwd('C:/Users/shiju/OneDrive/Desktop/Fr Jobs/Github/Elastic net regression')
+# set the path where code and data stored. Please change this line according to your local machine path
+setwd('D:/Github_files/Machine-Learning-in-Bioinformatics')
+
 # Load the required package to perform elastic net regression
 library('glmnet')
 
