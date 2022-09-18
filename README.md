@@ -154,6 +154,7 @@ mse_Net
 
 plot(y_test_1, Pred_net)
 ```
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/synthetic_pred_vs_test.jpg?raw=true" width="600">
 
 ```markdown
 
