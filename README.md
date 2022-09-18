@@ -99,6 +99,8 @@ colnames(x)<-paste('gene', nn, sep = '.')
 x
 ```
 First 10 row and column of x (Total size 1000 x 5000)
+
+
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/xdata.jpg?raw=true" width="600">
 
 
@@ -115,6 +117,8 @@ y=data.frame(y1,y2)
 y
 ```
 First 10 row of y (Total size 1000 x 2)
+
+
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/ydata.jpg?raw=true" width="400">
 
 
