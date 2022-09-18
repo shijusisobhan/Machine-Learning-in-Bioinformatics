@@ -208,7 +208,7 @@ hand on a 24-h clock. θi =2*pi*ti/24, where ti is the time point when endogenou
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/elastic.jpg?raw=true" width="400">
 
 
-Here we demonstrate the Implementation of the Machine learning algorithm on R. The data used here is originally presented by [Moller et. al (2013)](https://pubmed.ncbi.nlm.nih.gov/23440187/). We have downloaded the data and normalized it based on the techniques described in [Braun et.al (2018)](https://pubmed.ncbi.nlm.nih.gov/30201705/). We already upload the normalized gene expression data on the GitHub page.
+Here we demonstrate the Implementation of the Machine learning algorithm on R. The data used here is originally presented by [Moller et. al (2013)](https://pubmed.ncbi.nlm.nih.gov/23440187/). I have downloaded the data and normalized it based on the techniques described in [Braun et.al (2018)](https://pubmed.ncbi.nlm.nih.gov/30201705/). I already uploaded the normalized gene expression data on the GitHub page.
 
 ```markdown
 # Clear the global environment
@@ -278,6 +278,7 @@ plot(y_test_Time, Pred_Time)
 ```
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/pred_vs_test_reala_data.jpg?raw=true" width="400">
 
+Elastic nete regression accurately prdict the internal body time from gene expression data. Note that the data points on the two corners are not an outlier or bad results, instead, they are also show high accuracy, because the true time is modulo 24.
 ```markdown
 
 ## ******Extract the real genes that correlate with DLMO25 time **********************
