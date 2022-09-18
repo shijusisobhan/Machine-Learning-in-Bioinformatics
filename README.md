@@ -119,7 +119,7 @@ y
 First 10 row of y (Total size 1000 x 2)
 
 
-<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/ydata.jpg?raw=true" width="400">
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/ydata.jpg?raw=true" width="200">
 
 
 ```markdown
