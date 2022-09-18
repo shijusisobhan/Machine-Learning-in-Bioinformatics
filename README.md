@@ -96,7 +96,13 @@ p=5000 # Number of genes
 x=matrix(rnorm(n*p), nrow = n, ncol = p)
 nn<-1:5000
 colnames(x)<-paste('gene', nn, sep = '.')
+x
 ```
+First 10 row and column of x (Total size 1000 x 5000)
+
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/xdata.jpg?raw=true" width="600">
+
 
 ```markdown
 ## Define the output y1 and y2 (multi response)
@@ -108,7 +114,13 @@ real_p2=c(21,24,25,29,30,35,40,45,60,61,68,90,99)
 y1=apply(x[,real_p1], 1, sum)+rnorm(n)
 y2=apply(x[,real_p2], 1, sum)+rnorm(n)
 y=data.frame(y1,y2)
+y
 ```
+First 10 row of y (Total size 1000 x 2)
+
+
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/ydata.jpg?raw=true" width="200">
+
 
 ```markdown
 
