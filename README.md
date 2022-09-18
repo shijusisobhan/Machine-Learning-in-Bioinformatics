@@ -208,7 +208,7 @@ hand on a 24-h clock. θi =2*pi*ti/24, where ti is the time point when endogenou
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/elastic.jpg?raw=true" width="400">
 
 
-Here we demonstrate the Implementation of the Machine learning algorithm on R. The data used here is originally presented by Moller et. al (2013). We have downloaded the data and normalized it based on the techniques described in Braun et.al (2018). We already upload the normalized gene expression data on the GitHub page.
+Here we demonstrate the Implementation of the Machine learning algorithm on R. The data used here is originally presented by [Moller et. al (2013)](https://pubmed.ncbi.nlm.nih.gov/23440187/). We have downloaded the data and normalized it based on the techniques described in [Braun et.al (2018)](https://pubmed.ncbi.nlm.nih.gov/30201705/). We already upload the normalized gene expression data on the GitHub page.
 
 ```markdown
 # Clear the global environment
