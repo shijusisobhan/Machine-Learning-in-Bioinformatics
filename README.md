@@ -195,17 +195,17 @@ The current method to assess internal time is dim-light melatonin onset (DLMO): 
 1. log2 normalization of gene expression data
 2. normalization of data within the subject
 
-<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Normalization.jpg?raw=true" width="300">
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Normalization.jpg?raw=true" width="200">
 
 3. Collect the time after melatonin reaches 25% (DLMO25). Convert the time into angle of the hour
 hand on a 24-h clock. θi =2*pi*ti/24, where ti is the time point when endogenous melatonin reaches 25% concentration in blood plasma.
 4. Perform a bivariate regression of the cartesian coordinates (The melatonin level with respect to the time roughly follows a cosine wave with a period of 24hr)
 
-<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Regression.jpg?raw=true" width="300">
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Regression.jpg?raw=true" width="400">
 
 5. In this problem the number of predictor variables, ie genes (7616) are larger than number of observations (355). Also, the majority of the genes will not have strong relationship with internal time. So, to reduce the overfitting and obtain a simple model, elastic net regularization for feature selection. It solves following equation to get the best fit.
 
-<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/elastic.jpg?raw=true" width="300">
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/elastic.jpg?raw=true" width="400">
 
 
 Here we demonstrate the Implementation of the Machine learning algorithm on R. The data used here is originally presented by Moller et. al (2013). We have downloaded the data and normalized it based on the techniques described in Braun et.al. We already upload the normalized gene expression data on the GitHub page.
