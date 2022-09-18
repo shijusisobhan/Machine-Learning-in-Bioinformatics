@@ -98,6 +98,9 @@ nn<-1:5000
 colnames(x)<-paste('gene', nn, sep = '.')
 ```
 
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/xdata.jpg?raw=true" width="600">
+*x*
+
 ```markdown
 ## Define the output y1 and y2 (multi response)
 
@@ -109,6 +112,8 @@ y1=apply(x[,real_p1], 1, sum)+rnorm(n)
 y2=apply(x[,real_p2], 1, sum)+rnorm(n)
 y=data.frame(y1,y2)
 ```
+<img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/ydata.jpg?raw=true" width="600">
+*y*
 
 ```markdown
 
