@@ -289,7 +289,7 @@ colnames(P_x)<-'coefficients'
 P_x$genes<-row.names(P_x)
 P_x<-P_x[,c(2,1)]
 Px_sort<-P_x[order(-P_x$coefficients),]
-sig_genes<- Px_sort[which(Px_sort$coefficients > 1e-1),]
+sig_genes<- Px_sort[which(Px_sort$coefficients > 0),]
 sig_genes
 ```
 
