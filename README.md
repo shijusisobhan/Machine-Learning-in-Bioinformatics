@@ -295,4 +295,4 @@ sig_genes
 
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Sig_genes.jpg?raw=true" width="300">
 
-Significant genes in one iteration is shown here. User can try it with different training set and different threshold. In the litterature [Braun et.al (2018)](https://pubmed.ncbi.nlm.nih.gov/30201705/) listed a set of 41 genes which is obtained via 12 repeated runs using different training samples.
+Significant genes in one iteration are shown here. User can try it with different training sets and different threshold. In the litterature, [Braun et.al (2018)](https://pubmed.ncbi.nlm.nih.gov/30201705/) listed a set of 41 genes which is obtained via 12 repeated runs using different training samples.
