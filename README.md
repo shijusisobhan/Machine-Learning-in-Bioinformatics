@@ -182,7 +182,7 @@ P_y2_sort<-P_y2[order(-P_y2$coefficients),]
 sig_genes_y2<- P_y2_sort[which(P_y2_sort$coefficients > 1e-1),]
 sig_genes_y2
 ```
-Genes with very low values of coefficients probably don't have any correlation with the output, so we can avoid them for future studies. Here we set a coefficient value less than 1e-1 is not significant. Users can observe that the genes number that we selected for define outputs are associated with coefficient values greater than 1e-1.
+Genes with very low values of coefficients probably don't have any correlation with the output, so we can avoid them for future studies. Here we set a coefficient value less than 1e-1 is not significant. Users can observe that the genes number that we selected for define outputs have coefficient values greater than 1e-1.
 
 ## Real-world example: Predict physiological time based on gene expression in human blood
 
