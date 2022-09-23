@@ -9,7 +9,7 @@ Technological advances in next-generation sequencing (NGS) generate massive amou
 1. Introduction to basic terminologies in ML and Regularization
 2. Application of regularization with synthetic data (with R code)
 3. Introduction to biological background of the real-world problem
-4. Application of regularization to solve the real-world problem (with R code)
+4. Application of regularization to solve the real-world problem (with R & python code)
 
 ## Introduction to basic terminologies in ML and Regularization
 ### Bias and variance
@@ -294,4 +294,4 @@ sig_genes
 
 <img src="https://github.com/shijusisobhan/Machine-Learning-in-Bioinformatics/blob/main/Figures/Sig_genes.jpg?raw=true" width="300">
 
-Significant genes in one iteration are shown here. User can try it with different training sets and different threshold. In the litterature, [Braun et.al (2018)](https://pubmed.ncbi.nlm.nih.gov/30201705/) listed a set of 41 genes which is obtained via 12 repeated runs using different training samples.
+Significant genes in one iteration are shown here. User can try it with different training sets and different threshold. In the litterature, [Braun et.al (2018)](https://pubmed.ncbi.nlm.nih.gov/30201705/) listed a set of 41 genes which is obtained via 12 repeated runs using different training samples. Those who are interested on python coding, it also uploaded this GitHub repository.
