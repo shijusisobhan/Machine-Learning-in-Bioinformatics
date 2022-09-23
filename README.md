@@ -3,7 +3,7 @@ Technological advances in next-generation sequencing (NGS) generate massive amou
 
 ## Prerequisites
 1. You are familiar with basic machine learning techniques (eg: Linear Regression)
-2. You have basic knowledge of R programming 
+2. You have basic knowledge of R\python programming 
 
 ## Workflow
 1. Introduction to basic terminologies in ML and Regularization
